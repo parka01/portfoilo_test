@@ -616,7 +616,7 @@
                 text-align: center;
 
                 span {
-                    font-size: 20px;
+                    font-size: clamp(7px, calc(-36px + 3vw), 20px);
                     background: #fff;
                     padding: 10px 25px;
                     color: var(--river);
