@@ -618,7 +618,7 @@
                 span {
                     font-size: clamp(7px, calc(-36px + 3vw), 20px);
                     background: #fff;
-                    padding: 10px 25px;
+                    padding: 10px 20px;
                     color: var(--river);
                 }
             }
