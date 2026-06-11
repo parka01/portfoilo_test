@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- 배포용 base tag -->
+    <base href="/newB.tria/">
+
+    <!-- 개발용 base tag -->
+    <!-- <base href="/"> -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newB.tria🌿 | 학생증 인증 행사</title>
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/event.css">
+</head>
+
+<body class="event_page">
+    <header id="wrap_header"></header>
+    <div id="wrap_main">
+        <div class="main">
+            <div class="img_heart_flower">
+                <img src="./images/asset_heart_flower.png" alt="">
+            </div>
+            <div class="img_cube">
+                <img src="./images/asset_newbtria_cube.png" alt="">
+            </div>
+            <div class="main_image">
+                <img src="./images/event_student.png" alt="">
+                <a href="#" class="btn_apply">
+                    무료 샘플 신청하러 가기
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer id="wrap_footer"></footer>
+    <!-- SCRIPT -->
+    <script src="./js/jquery-4.0.0.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        fetch("./pages/header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("wrap_header").innerHTML = data;
+            });
+    </script>
+    <script>
+        fetch("./pages/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("wrap_footer").innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>
