@@ -1,0 +1,60 @@
+@import url(./animation.css);
+
+#wrap_main {
+    background: url(../images/bg_grid_lemon_light.png)repeat center top;
+}
+
+.main {
+    max-width: 520px;
+    margin: 0 auto;
+    position: relative;
+    padding-block: 100px;
+
+    .img_heart_flower {
+        height: 150px;
+        display: flex;
+        position: absolute;
+        top: 200px;
+        left: -40px;
+        animation: floating_text 4s ease-in-out infinite;
+    }
+
+    .img_cube {
+        height: 150px;
+        display: flex;
+        position: absolute;
+        top:20px;
+        right: 20px;
+        animation: floating_text 4s ease-in-out infinite;
+    }
+
+    .main_image {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 396px;
+            box-shadow: 5px 5px 10px var(--wet-pebbles);
+
+        }
+
+        .btn_apply {
+            display: block;
+            font-size: 18px;
+            padding: 10px 20px;
+            background: var(--lemon-daffodil);
+            border-radius: 10px;
+            border: dashed 2px var(--earth);
+            position: absolute;
+            bottom: 210px;
+        }
+
+        .btn_apply:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 5px 5px 10px var(--wet-pebbles);
+            transition: all 0.5s;
+        }
+    }
+}
