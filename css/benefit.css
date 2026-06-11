@@ -61,7 +61,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-inline: 350px;
 
     .main_image {
         text-align: center;
