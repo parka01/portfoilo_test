@@ -861,7 +861,7 @@
         }
 
         .grid_paper_title_long {
-            background: url(../images/grid_paper_title_long.png) top -80px left 0 no-repeat;
+            background: url(../images/grid_paper_title_long.png) top -70px left 0 no-repeat;
             padding: 20px 50px;
             box-shadow: 4px 4px 5px var(--wet-pebbles);
             background-size: 200%;
@@ -874,7 +874,7 @@
             margin-bottom: 100px;
             padding: 20px;
             box-shadow: 4px 4px 5px var(--wet-pebbles);
-            background: url(../images/bg_daffidils.png) top -70px center no-repeat;
+            background: url(../images/bg_daffidils.png) top -70px center repeat;
             background-size: 200%;
             border-radius: 5px;
             font-family: nicholas;
