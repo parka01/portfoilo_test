@@ -103,6 +103,9 @@
     }
 
     @media screen and (max-width: 750px) {
+        .main_page #nav_scroll {
+            display: none;
+        }
 
         .header.bg_river {
             --color-start: #86accd;
@@ -589,7 +592,7 @@
     .main_page .main_01 {
         margin-bottom: 180px;
         padding-top: 400px;
-        padding-inline: 60px;
+        padding-inline: clamp(5px, calc(-20px + 5vw), 60px);
 
         #box_split_module {
             margin-top: 200px;
