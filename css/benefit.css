@@ -22,7 +22,7 @@
             }
 
             .asset_cube {
-                width: 110px;
+                width: 90px;
             }
 
             .asset_t {
@@ -37,13 +37,13 @@
             }
 
             .asset_ball_green {
-                width: 340px;
-                top: 230px;
+                width: 200px;
+                top: 130px;
                 left: 10px;
             }
 
             .asset_ball_pink {
-                right: 70px;
+                right: 30px;
             }
         }
     }
