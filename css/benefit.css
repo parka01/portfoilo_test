@@ -6,14 +6,19 @@
         padding-inline: 20px;
         overflow-x: clip;
 
-        .box_assets_top,
-        .box_assets_middle,
-        .box_assets_bottom {
-            width: 80%;
+        .main_image {
 
-            .asset_flower {
-                width: 100px;
-                top: 170px;
+            .box_assets_top,
+            .box_assets_middle,
+            .box_assets_bottom {
+                width: 80%;
+            }
+
+            .box_assets_bottom {
+                .asset_flower {
+                    width: 80px;
+                    top: 170px;
+                }
             }
 
             .asset_cube {
@@ -32,8 +37,9 @@
             }
 
             .asset_ball_green {
-                width: 40px;
+                width: 340px;
                 top: 230px;
+                left: 10px;
             }
 
             .asset_ball_pink {
