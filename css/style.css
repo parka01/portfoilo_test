@@ -129,6 +129,14 @@
             display: none;
         }
 
+        .grid_products {
+            padding: 0;
+
+            .grid_bg {
+                height: 100px;
+            }
+        }
+
         #box_qna {
             flex-direction: column;
             align-items: center;
@@ -136,6 +144,10 @@
             .box_sticky_note {
                 width: 70%;
             }
+        }
+
+        .qna_list {
+            width: 98%;
         }
 
         .wrap_flow_banner {
@@ -162,6 +174,34 @@
                 width: 100%;
             }
         }
+
+        .box_instagram_card {
+            margin-bottom: 0;
+        }
+
+        .instagram_card {
+            width: 49%;
+            margin-bottom: 60px;
+        }
+
+        .footer {
+            flex-direction: column;
+
+            #wrap_fnb {
+                width: 100%;
+                margin-bottom: 100px;
+                padding-inline: 20px;
+            }
+
+            #wrap_footer_info {
+                width: 100%;
+                padding-inline: 20px;
+            }
+
+            h1 {
+                margin-bottom: 100px;
+            }
+        }
     }
 
     /* PC */
@@ -179,6 +219,34 @@
 
         #wrap_sticky_banner_motion {
             top: 5px;
+        }
+
+        .grid_products {
+            padding: 20px 20px 80px 20px;
+
+            .grid_bg {
+                height: 200px;
+            }
+        }
+
+        .box_instagram_card {
+            margin-bottom: 50px;
+        }
+
+        .instagram_card {
+            width: 23%;
+        }
+
+        .qna_list {
+            width: 68%;
+        }
+
+        .footer {
+            justify-content: space-between;
+
+            h1 {
+                margin-bottom: 200px;
+            }
         }
     }
 
@@ -840,7 +908,7 @@
 
     .main_03 {
         box-sizing: border-box;
-        padding: 10px 0 200px 0;
+        padding: 10px 0 clamp(10px, calc(-200px + 15vw), 200px) 0;
         overflow-x: hidden;
 
         .btn_lemon {
@@ -872,7 +940,7 @@
 
         .txt_wavy {
             background: #FFF;
-            margin-top: 300px;
+            margin-top: clamp(150px, calc(0px + 20vw), 300px);
             margin-bottom: 100px;
             padding: 20px;
             box-shadow: 4px 4px 5px var(--wet-pebbles);
@@ -897,9 +965,9 @@
     .main_page .banner_promotion {
         background: url(../images/bg_daffidils.png);
         mask: radial-gradient(45px, var(--lemon-daffodil)95%, #ffffff00) 100% 50px/80px 100px repeat space,
-            linear-gradient(#000 170px, #ffffff00 0);
+            linear-gradient(#000 200px, #ffffff00 0);
         width: 100%;
-        height: 220px;
+        height: 260px;
         padding-block: 10px;
         display: flex;
         justify-content: center;
@@ -925,7 +993,7 @@
             background: var(--river);
             border: dashed 2px var(--earth);
             border-radius: 5px;
-            margin-top: 50px;
+            margin-top: 40px;
         }
 
         .btn_blue:hover {
@@ -947,7 +1015,6 @@
         margin-inline: 100px;
         overflow: hidden;
         border-radius: 10px;
-        padding: 20px 20px 80px 20px;
         background-size: cover;
         position: relative;
 
@@ -968,13 +1035,11 @@
         }
 
         .toner_v2 {
-            height: 100%;
             background: url(../images/productphoto_toner_02.png) center;
             background-size: cover;
         }
 
         .serum_v2 {
-            height: 100%;
             background: url(../images/productphoto_serum_02.png) center;
             background-size: cover;
         }
@@ -987,7 +1052,6 @@
         .cusion_v2 {
             background: url(../images/productphoto_cusion_02.png) center;
             background-size: cover;
-            height: 100%;
         }
 
         .table_main {
@@ -996,9 +1060,6 @@
             background-size: cover;
         }
 
-        .grid_bg {
-            height: 200px;
-        }
     }
 
     .box_instagram_card {
@@ -1006,12 +1067,13 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 50px;
+
         padding-inline: 10px;
+        flex-wrap: wrap;
 
         .instagram_card {
             box-sizing: border-box;
-            width: 23%;
+
             aspect-ratio: 4/5;
             background: rgba(255, 255, 255, 0.301);
             box-shadow: 2px 2px 5px var(--wet-pebbles);
@@ -1098,7 +1160,6 @@
     .qna_list {
         display: flex;
         flex-direction: column;
-        width: 68%;
 
         .answer {
             box-sizing: border-box;
@@ -1181,7 +1242,7 @@
     .footer {
         box-sizing: border-box;
         display: flex;
-        justify-content: space-between;
+
         max-width: 1320px;
         margin: 0 auto;
         padding-block: 120px;
@@ -1196,7 +1257,6 @@
 
         h1 {
             font-family: nicholas;
-            margin-bottom: 200px;
             font-weight: normal;
             -webkit-font-smoothing: antialiased;
             -webkit-text-stroke: 1px currentColor;
